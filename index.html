@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd9659739b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+          <img   src="profile.png" alt="Profile pic" style="width:570px;height:700px;">
+            <nav >
+                <ul id="menu">
+                    <li><a href="#body">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="container">
+              <!-- <p>UI/UX Designer</p><br> -->
+              <h1 >Hi, I am <span> Piyush Raj </span><br> An aspiring software developer.</h1>
+            </div>
+    </div>
+    <!----about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="pic1.JPG">
+                </div>
+                <div class="col2">
+                    <h1>About Me</h1>
+                    <p>Greetings! My name is Piyush Raj, and I am currently pursuing my Bachelor's degree in Electronics and Communication Engineering 
+                        (B.Tech , 4th year) from Techno Main Saltlake. I am passionate about pursuing a career in the field of IT & Software development 
+                        and have developed a diverse skill set to excel in the industry.</p>
+                <div class="title">
+                    <p class="t1 active-link" onclick="opentab(event,'skills')">Skills</p>
+                    <p class="t1" onclick="opentab(event,'links')">Links</p>
+                    <p class="t1"onclick="opentab(event,'education')">Education</p>
+                </div>
+                <div class="contents active" id="skills">
+                    <ul>
+                        <li><span>UI / UX</span><br><span class="small">Designing Web/App interfaces.</span></span></li>
+                        <li><span>Problem Solving</span><br> <span class="small">Solved 250+ questions combined across all platforms.</span></li>
+                        <li><span>MySQL</span></li>
+                        <li><span>CN, OOPS , OS , SE etc.</span></li>
+                    </ul>
+                </div>
+                <div class="contents" id="links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/piyush-raj-tmsl/">LinkedIn</a></li>
+                        <li><a href="https://github.com/me-piyush">GitHub</a></li>
+                        <li><a href="https://leetcode.com/me_piyush/">Leetcode</a></li>
+                        <li><a href="https://auth.geeksforgeeks.org/user/me_piyush/practice">Geeks for Geeks</a></li>
+                        <li><a href="https://www.codechef.com/users/me_piyush_raj">CodeChef</a></li>
+                    </ul>
+                </div>
+                <div class="contents" id="education">
+                    <ul>
+                        <li><span>2020- Present</span><br><span class="small">B.Tech in Electronics and Communication Engineering <br> Techno Main Saltlake , Kolkata , MAKAUT <br>
+                        CGPA: 9.3 (as of now)</span></li>
+                        <li><span>2018 -2020</span><br> <span class="small">St. Joseph Public School , Kota<br>
+                            Higher Secondary PCM<br> Percentage: 75 %</span></li>
+                        <li><span>2009-2018</span><br><span class="small">G.D. D.A.V. Public School , Deoghar<br>Matriculate<br>Percentage: 94.2 %</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+<!----Portfolio----->
+    <div id="portfolio">
+        <div class="container">
+        <h1 >My Work</h1>
+        <div class="work">
+            <div class="w1">
+                <img src="https://shorturl.at/ekoIK" alt=""></img>
+                <div class="layer"><h3>Portfolio Website</h3>
+                <p>
+                    This Portfolio  website  showcase my own individual's skills, projects, and contact information.
+                </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ede4e4;"></i></a>
+            </div>
+            </div>
+            <div class="w1">
+                <img src="https://shorturl.at/juF48" alt=""></img>
+                <div class="layer"><h3>E-Siksha Website</h3>
+                    <p>
+                        User-friendly platform for free educational courses enrollment and access.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ede4e4;"></i></a>
+                </div>
+            </div>
+            <div class="w1">
+                <img src="https://shorturl.at/ahitT" alt=""></img>
+                <div class="layer"><h3>Classrom Management System</h3>
+                    <p>
+                        Web-based app for efficient class scheduling, student records, and attendance management.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square" style="color: #ede4e4;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- contacts -->
+   <div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i>  writeto.piyushraj@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  +91 89550636223</p>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/piyush-raj-tmsl/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/me-piyush"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/me_piyush/"><i class="fa-solid fa-code"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1NPmZRFgKjwrbjNaxIG0LMYADpP5zKFVU/view?usp=sharing" class="btn">Download CV</a>
+            </div>
+            <div class="right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   </div>
+    <script>
+       var tablinks = document.getElementsByClassName("t1");
+        var tabcontents = document.getElementsByClassName("contents");
+      
+        function opentab(event,tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active");
+        }
+      </script>
+      <script>
+        var menu = document.getElementById("menu");
+        function openmenu(){
+            menu.style.right= "0";
+            menu.style.height="350px"
+        }
+        function closemenu(){
+            menu.style.right= "-200px";
+        }
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzbVn5WCdGVsnOZRv1sxVsO7mzxGdyzbMcBHyGSUNp1qnnz9lqPHcH5ATUWCklc1j3jmA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML="";
+
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
